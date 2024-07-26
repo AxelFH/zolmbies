@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('../src/assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IM Fell DW Pica';
+  src: url('../src/assets/fonts/IMFellDWPica-Regular.ttf') format('truetype');
+}
+
+body{
+  background-color: #37594B !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    overflow: hidden;
+  }
+
+  .navbar-brand img {
+    max-width: 120px; 
+    height: auto; 
+  }
+
+  .navbar-toggler {
+    padding: .25rem .75rem; 
+  }
+
+  .navbar-toggler-icon {
+    font-size: 1.5rem;
+  }
+
+
+}
+
+@media (max-width: 380px) {
+  body{
+    width: 109.4% !important;
+  }
+}

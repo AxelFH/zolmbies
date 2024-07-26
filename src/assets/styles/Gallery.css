@@ -1,0 +1,134 @@
+.gallery-container {
+    margin-top: 1vw; /* Reducido el margen superior */
+    padding: 3vw; /* Reducido el padding */
+    text-align: center;
+}
+
+.g-title {
+    color: #061D22 !important;
+    font-size: 2vw !important; /* Ajustado el tamaño del título */
+}
+
+.creature-gallery {
+    margin: auto 3vw; /* Ajustado el margen */
+    padding: 3vw; /* Reducido el padding */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15vw, 1fr)); /* Ajustado el tamaño de las columnas */
+    gap: 2vw; /* Ajustado el espacio entre elementos */
+}
+
+.creature-card {
+    background-color: #346C54;
+    
+    border-radius: 1vw; /* Ajustada la border-radius */
+    padding: 3vw; /* Reducido el padding */
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.professor {
+    width: 20vw; /* Ajustado el ancho del profesor */
+    margin: auto;
+    margin-top: 1vw !important;
+}
+
+.creature-card:hover {
+    background-color: #061D22;
+}
+
+.creature-card img {
+    width: 10vw; /* Ajustado el tamaño de la imagen */
+    height: 10vw; /* Ajustada la altura de la imagen */
+    border-radius: 0.5vw; /* Ajustada la border-radius */
+    transition: transform 0.3s ease;
+}
+
+.creature-card img:hover {
+    transform: scale(1.1);
+}
+
+.creature-card h3 {
+    color: #fff;
+    margin-top: 1vw; /* Ajustado el margen superior */
+    font-size: 1.5vw; /* Ajustado el tamaño del título */
+}
+
+.creature-card p {
+    text-align: center;
+    margin-top: 1vw; /* Ajustado el margen superior */
+    font-size: 1.2vw; /* Ajustado el tamaño del texto */
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 3vw; /* Reducido el padding */
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 2vw; /* Ajustado el tamaño del botón de cerrar */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .creature-gallery {
+        grid-template-columns: 1fr; /* Cambiar a una columna en dispositivos móviles */
+    }
+
+    .creature-card {
+        width: 90%; /* Ajustar el ancho de la tarjeta para ocupar la pantalla */
+        margin: auto; /* Centrar la tarjeta */
+        border-radius: 5vw;
+        margin-top: 2vw;
+    }
+
+    .creature-card img {
+        width: 50vw; /* Ajustado el tamaño de la imagen */
+        height: 50vw; /* Ajustada la altura de la imagen */
+        border-radius: 0.5vw; /* Ajustada la border-radius */
+        transition: transform 0.3s ease;
+    }
+
+
+    .gallery-container>.professor{
+        width: 70%;
+    }
+
+    .g-title{
+        padding: 2.0vw;
+        font-size: 5vw !important;
+    }
+
+    .professor h3{
+        font-size: 5vw;
+    }
+
+    .professor p{
+        font-size: 5vw;
+    }
+}
+

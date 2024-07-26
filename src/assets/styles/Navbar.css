@@ -1,0 +1,206 @@
+.navbar {
+  min-height: 5vw;
+  width: 100% !important;
+}
+
+.links{
+  width: 53vw;
+  gap: 2vw;
+}
+
+.links-area{
+  margin-left: 5vh;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #061D22;
+    box-shadow: 0 0 0 0 rgba(13, 224, 147, 0.959);
+    color: #061D22;
+  }
+  70% {
+    background-color: #00ff91;
+    box-shadow: 0 0 0 30px rgba(0, 255, 162, 0);
+    border-color: #fbff00;
+    color: #061D22;
+  }
+  100% {
+    background-color: #061D22;
+    box-shadow: 0 0 0 0 rgba(52, 102, 84, 0);
+    color: #061D22;
+  }
+}
+
+.btn2{
+  margin-left: 1.3vw !important;
+}
+.btn {
+  position: relative;
+  font-family: 'IM Fell DW Pica' !important;
+  font-size: 1.5vw !important;
+  margin-left: 1vw !important;
+  border-radius: 15px !important;
+  width: 101%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background: transparent; /* Establece un fondo transparente */
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 255, 0, 0.2), rgba(0, 128, 0, 0.5));
+  mask: url(../images/btn-mask.8c8220abe63024daec508202178d116b.png);
+  mask-size: 7100% 100%;
+  -webkit-mask-size: 7100% 100%;
+  transition: mask-position 0.7s steps(70), -webkit-mask-position 0.7s steps(70), background-color 0.7s;
+  z-index: 1;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:hover::before {
+  mask-position: 100% 0;
+  -webkit-mask-position: 100% 0;
+  background-color: transparent; /* Cambia el color de fondo a transparente durante el hover */
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  0% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+
+.bg-custom {
+  background-color: #2a443921;
+}
+
+.nav-link {
+  font-family: 'IM Fell DW Pica' !important;
+  font-size: 2.4vw !important;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline #fff;
+}
+
+.logo-image {
+  margin-left: 4vw;
+  width: 7vw;
+  height: 5VW;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+
+
+@media (max-width: 768px) {
+  .logo-image {
+    width: auto;
+    height: auto;
+    margin: auto 10vw;
+  }
+
+  .burguer {
+    margin: auto !important;
+  }
+
+  .links {
+    width: 100%;
+    text-align: center !important;
+    text-decoration: underline #fff;
+  }
+
+  .lnk{
+    font-size: 3.5vw !important;
+
+  }
+
+
+  .btn {
+    margin: auto 10vw !important;
+    height: 13vw;
+    border-radius: 30px !important;
+    width: 30vw !important; 
+    font-weight: bold !important;
+    font-size: 3vw !important;
+    margin-top: 1vw;
+    padding: 0.5vw;
+  }
+
+  .fixed-top {
+    position: static;
+  }
+}
+
+/* Estilos para el iPad Mini en modo vertical */
+@media (max-height: 1024px) {
+
+  .links{
+    margin-right: 3vw;
+  }
+
+  .btn {
+    margin: auto 0.5vw;
+
+  }
+
+  .fixed-top {
+    position: static;
+  }
+}

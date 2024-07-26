@@ -1,0 +1,201 @@
+.about {
+    padding: 1.5vw;
+}
+
+.about-container {
+    margin-top: 7vw !important;
+    margin: 0 2vw;
+    margin-bottom: 2.5vw;
+}
+
+.fix {
+    margin-top: 3vw !important;
+    font-size: 1.1vw !important;
+}
+
+.about-title {
+    color: #061D22 !important;
+    font-size: 1.6vw;
+    text-align: center;
+    margin-bottom: 10vw;
+}
+
+.about-subtitle {
+    font-family: 'Press Start 2P' !important;
+    margin-top: -8vw;
+    margin-bottom: 2.5vw;
+    color: #061D22 !important;
+    text-align: center;
+    font-size: 1.2vw !important;
+}
+
+
+.about-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 25vw; 
+    padding: 1vw; 
+    border-radius: 0.5vw; 
+    box-shadow: 0 0.25vw 0.5vw rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin: auto;
+    margin-bottom: 1vw; 
+}
+
+.about-card-image {
+    width: 12vw; 
+    height: 13vw; 
+    margin: auto;
+    margin-left: 6.2vw; 
+}
+
+.about-card-title {
+    font-family: 'Press Start 2P' !important;
+    color: #061D22 !important;
+    margin-top: 0.5vw; 
+    font-size: 1vw; 
+    text-align: center;
+}
+
+.about-card-detail {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 0.9vw; /* Reducido el tamaño del texto */
+    text-align: center !important;
+    margin: 0vw auto; /* Ajustado el margen */
+    text-decoration: none;
+    margin-top: 0px !important;
+    color: #061D22 !important;
+
+}
+
+.about-card:hover {
+    transform: scale(1.05); /* Ajustado el aumento de tamaño en hover */
+}
+
+.about-card-title {
+    font-family: 'Press Start 2P' !important;
+    color: #fff;
+    margin-top: 1vw;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.about-card-detail {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 1.1vw;
+    text-align: center !important;
+    margin: 0px auto;
+    text-decoration: none;
+    margin-top: 0px !important;
+}
+
+.about-card-detail strong {
+    text-decoration: underline !important;
+}
+
+
+.about-links-container {    
+    margin-top: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-links-container .about-card {
+    width: calc(23% - 5vw);
+    background-color: #91bc74 !important;
+    padding: 0px;
+    box-shadow: 0.3vw 0.3vw 1.5vw rgba(6, 29, 34, 0.5);
+
+}   
+
+.about-links-container .about-card:hover {
+    background-color: #346C54;
+}
+
+.about-links-container .link-card-image {
+    width: 15vw;
+    margin: 1.5vw;
+    height: 10vw;
+}
+
+.dx{
+    margin-left: 4vw !important;
+    width: 9vw !important;
+}
+
+.brd {
+    margin-left: 0.8vw !important;
+    width: 13wvw !important;
+
+}
+
+.about-links-container .about-card-image:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+
+    .about-container{
+        margin-top: 10vw !important;
+    }
+
+    .about-subtitle {
+        padding: 7vw !important;
+        font-size: 4vw !important;
+        margin-top: -10vw;
+    }
+
+    .about-card {
+        width: calc(100% - 30vw); /* Ajustado el ancho en dispositivos móviles */
+        height: 100%;
+        border-radius: 15px;
+        margin-top: 10vw !important;
+        padding: 5vw;
+    }
+
+    .about-card-title{
+        font-size: 5vw;
+    }
+
+    .about-card-detail{
+        font-size: 4.5vw;
+    }
+
+    .about-card-image{
+        margin-left: 15% !important; /* Ajustado el margen izquierdo en dispositivos móviles */
+        height: 70%;
+        width: 70%;
+    }
+
+    
+
+    .about-links-container .about-card {
+        width: calc(100% - 2vw);
+    }
+
+    .about-links-container {
+        margin: auto;
+    }
+    
+    .about-card{
+        margin-top: 1vw; /* Ajustado el margen superior en dispositivos móviles */
+        width: 80% !important;
+        padding: 10vw !important;
+    }
+
+    .link-card-image {
+        width: 40vw !important;
+        height: 20vw !important;
+        margin-left: 17% !important;
+    }
+
+
+    
+}

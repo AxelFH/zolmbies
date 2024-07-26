@@ -1,0 +1,291 @@
+.info {
+    display: flex;
+    margin-top: -9vw;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+h2,
+a {
+    font-family: 'Press Start 2P' !important;
+}
+
+h2 {
+    font-size: 1.5vw !important;
+}
+
+p {
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #dad9d9;
+    text-align: justify;
+    margin-top: 2.5vw !important;
+}
+
+a {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+p,
+h2,
+a {
+    color: #fff !important;
+}
+
+.info-container {
+    margin-left: 2vw;
+    width: 50%;
+    padding: 1vw;
+}
+
+.product-info-card {
+    background-color: #91bc74;
+    padding: 5vw;
+    border-radius: 1vw;
+    box-shadow: 0.3vw 0.3vw 1.2vw rgba(6, 29, 34, 0.5);
+    margin: 0 auto;
+    margin-bottom: 1vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info-card h2{
+    color: #12444e !important;
+}
+
+.external-link-card {
+    background-color: #91bc74;
+    padding: 1vw;
+    height: 5% !important;
+    border-radius: 1vw;
+    margin-top: 0.5vw !important;
+    text-align: center;
+    margin-top: 1.5vw;
+    box-shadow: 0.3vw 0.3vw 1.2vw rgba(6, 29, 34, 0.5);
+}
+
+.external-link-card:hover {
+    background-color: #346C54;
+}
+
+.link-content {
+    margin-left: 0vw;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.link-content a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.3vw !important;
+    color: #12444e !important;
+}
+
+.icon {
+    width: 5vw;
+    height: 3.5vw;
+    margin-top: -0.5vw;
+    margin-right: 0.5vw;
+}
+
+.image-container {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    min-width: 200px; /* Tamaño mínimo relativo al contenedor */
+}
+
+.product-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 100%; /* Tamaño mínimo relativo */
+}
+
+
+.info-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mylink {
+    width: 4.5vw !important; /* Tamaño deseado */
+    height: auto !important; /* Altura automática para mantener la proporción de la imagen */
+    display: inline-block !important; /* Para que el enlace ocupe solo el espacio de su contenido */
+    margin: auto 1vw !important; /* Centrar el enlace horizontalmente */
+}
+
+
+.info-text {
+    width: calc(50% - 1vw);
+    margin-top: 0.7vw;
+    background-color: #DFF8D0;
+    border-radius: 2vw;
+}
+
+.mini-title {
+    margin-top: 1.5vw;
+    text-align: center;
+    text-shadow: 0.4vw 0.4vw 1.6vw rgba(126, 110, 167, 0.5); 
+    font-family: 'Press Start 2P' !important;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+.mini-list {
+    margin-top: 1.2vw !important;
+    padding: 0.5vw;
+    text-align: center;
+    color: #12444e !important;
+    font-family: 'Press Start 2P' !important;
+    font-size: 0.72vw;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+
+    .icon {
+        width: 7vw !important;
+        height: 7vw;
+        margin-top: -0.5vw;
+    }
+
+    .external-link-card{
+        margin-top: 5vw !important;
+        height: 16vw !important;
+        border-radius: 15px !important;
+        padding: 2vw !important;
+    }
+
+    .link-content{
+        width: 100% !important;
+    }
+    
+    .link-content a {
+        text-decoration: none;
+        width: 100%;
+        font-size: 4.5vw !important;
+        color: #12444e !important;
+    }
+
+    .mylink {
+        width: 5vw !important; /* Tamaño deseado */
+        height: auto !important; /* Altura automática para mantener la proporción de la imagen */
+        display: inline-block !important; /* Para que el enlace ocupe solo el espacio de su contenido */
+        margin: auto 3vw!important; /* Centrar el enlace horizontalmente */
+    }
+
+
+    
+    h2 {
+        font-size: 6vw !important;
+    }
+
+    .info {
+        display: block;
+        margin-left: 0px;
+        margin-top: 0vw;
+        padding: 0 1vw;
+        
+    }
+
+    .info-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5vw;
+    }
+
+    .mini-title{
+        font-size: 4.5vw !important;
+    }
+
+    .mini-list{
+        margin-top: 8vw !important;
+        font-size: 3.5vw !important;
+    }
+
+    .product-info-card {
+        border-radius: 20px;
+        padding: 10vw !important;
+    }
+
+    .image-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 200px;
+        margin: auto 5vw;
+    }
+
+    .info-text {
+        padding: 5vw;
+
+        width: 100%;
+        border-radius: 20px !important;
+        margin-top: 10VW;
+        /* Ancho completo en dispositivos más pequeños */
+    }
+}
+
+@media (min-width: 769px) {
+    .info-container {
+        width: 100%;
+        max-width: 60vw;
+        margin: auto;
+        padding: 2vw;
+    }
+
+    .product-info-card {
+        margin-bottom: 2vw;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 60vw;
+        margin: auto;
+        padding: 2vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .product-image img {
+        width: 100%;
+        margin-left: 4vw !important;
+    }   
+}
+
+@media (max-width: 415px) {
+    .product-image img {
+        width: 100%;
+        margin-left: 3.6vw !important;
+    }   
+}
+
+@media (min-width: 390px) {
+    .product-image img {
+        width: 100%;
+        margin-left: 2.7vw !important;
+    }   
+}
+
+@media (max-width: 768px) {
+    .product-image img {
+        width: 50vw;
+        height: 50vw;
+        margin-left: 13.5vw !important;
+    }   
+}
+

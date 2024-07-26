@@ -1,0 +1,124 @@
+.features-view {
+    margin-top: -1vw; /* Reducido el margen superior */
+    padding: 3vw; /* Reducido el padding */
+}
+
+.text-section {
+    text-align: center;
+    padding: 3vw; /* Reducido el padding */
+    margin-bottom: -1.5vw !important; /* Reducido el margen inferior */
+    margin: auto;
+}
+
+.text-section .f-title {
+    color: #061D22 !important;
+    font-size: 1.8vw !important; /* Ajustado el tamaño del título */
+}
+
+.text-section p {
+    text-align: center;
+    margin-top: 4vw !important; /* Ajustado el margen superior */
+    color: #061D22 !important;
+    font-size: 1.4vw; /* Ajustado el tamaño del texto */
+    font-style: italic;
+}
+
+.card-container {
+    margin: auto 3vw; /* Ajustado el margen */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Agregada envoltura para flexibilidad en dispositivos móviles */
+}
+
+.feature {
+    width: calc(33.33% - 2vw); /* Reducido el ancho de las características y agregado espacio entre ellas */
+    margin-bottom: 2vw; /* Agregado margen inferior */
+}
+
+.feature-card {
+    border: 1px solid #ccc;
+    border-radius: 1vw; /* Ajustada la border-radius */
+    padding: 2vw; /* Reducido el padding */
+    background-color: #061D22;
+    transition: background-color 0.3s ease;
+}
+
+.feature-card:hover {
+    background-color: #346C54;
+}
+
+.feature-card img {
+    display: block;
+    margin: auto;
+    margin-bottom: -2   vw !important; /* Agregado margen inferior */
+    width: 12vw; /* Reducido el ancho de la imagen */
+    height: 12vw; /* Ajustada la altura de la imagen */
+}
+
+.feature-card h2 {
+    text-align: center;
+    font-size: 1vw !important; /* Ajustado el tamaño del título */
+    color: #fff;
+}
+
+.feature-card p {
+    text-align: justify;
+    color: #666;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1vw; /* Ajustado el tamaño del texto */
+}
+
+.feature-title {
+    font-size: 1.5vw !important; /* Ajustado el tamaño del título */
+    text-align: center !important;
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+
+    .text-section .f-title {
+        color: #061D22 !important;
+        font-size: 6vw !important; /* Ajustado el tamaño del título */
+    }
+    
+    .text-section p {
+        padding: 10vw;
+        font-size: 5vw; /* Ajustado el tamaño del texto */
+        font-style: italic;
+    }
+
+
+    .card-container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 1vw; /* Reducido el padding */
+    }
+
+    .feature {
+        width: calc(100% - 5vw); /* Ajustado el ancho en dispositivos móviles */
+    }
+
+    .feature-card {
+        border-radius: 15px;
+        width: calc(100% - 2vw); /* Ajustado el ancho en dispositivos móviles */
+        margin-bottom: 10vw !important; /* Agregado margen inferior */
+    }
+
+    .feature-card img {
+        width: 40%; /* Ajustado el ancho de la imagen en dispositivos móviles */
+        height: 40% /* Ajustada la altura de la imagen */
+    }
+
+    .feature-card h2 {
+        padding: 3vw;
+        font-size: 4vw !important; /* Ajustado el tamaño del título */
+    }
+    
+    .feature-card p {
+        padding: 3vw;
+        font-size: 5vw !important; /* Ajustado el tamaño del texto */
+    }
+}

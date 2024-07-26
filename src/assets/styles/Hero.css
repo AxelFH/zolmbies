@@ -1,0 +1,66 @@
+.professor-section {
+    position: relative;
+    height: 95vh; /* Ajusta la altura para que sea toda la pantalla */
+    width: 98.5vw; /* Ajusta el ancho para que sea toda la pantalla */
+    margin-top: 0; /* Ajusta el margen según sea necesario */
+    overflow: hidden; /* Asegúrate de que la sección no tenga desbordamiento */
+    background: url('../images/bgm.png') no-repeat center center;
+    background-size: cover; /* Ajusta el tamaño de fondo para cubrir todo el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-image {
+    width: auto;
+    height: 85vh; /* Ajusta la altura del personaje según sea necesario */
+    transition: transform 0.3s ease-in-out; /* Agrega la transición para el efecto de zoom */
+}
+
+.character-image:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+}
+
+.text-container {
+    margin-left: 2vw; /* Ajusta el margen según sea necesario */
+    color: white; /* Color del texto */
+    text-align: left; /* Alineación del texto */
+}
+
+.text-container h1 {
+    font-family: 'IM Fell DW Pica' !important;
+    font-size: 4vw; /* Ajusta el tamaño de la fuente del título */
+}
+
+.text-container h3 {
+    font-family: 'IM Fell DW Pica' !important;;
+    font-size: 2vw; /* Ajusta el tamaño de la fuente del subtítulo */
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    .professor-section {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        padding: 3vw;
+        margin-top: 15vw;
+    }
+
+    .character-image {
+        width: 100%;
+        height: auto;
+        max-height: 80%;
+    }
+
+    .text-container {
+        margin-left: 0; /* Ajusta el margen para pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .text-container h1 {
+        font-size: 6vw; /* Ajusta el tamaño del título para pantallas pequeñas */
+    }
+
+    .text-container h3 {
+        font-size: 4vw; /* Ajusta el tamaño del subtítulo para pantallas pequeñas */
+    }
+}
